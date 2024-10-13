@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitacion</title>
+    
+    <!-- Importar la fuente Pacifico desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            /* Añadir un fondo de color similar al de la imagen */
+            background: linear-gradient(to bottom, #b3d9ff, #ffffff); /* Degradado suave */
+        }
+        .full-page-image {
+            /* La imagen se verá completa sin recorte */
+            background-image: url('https://imgur.com/GmQvFNm.jpg');
+            height: 95vh; /* O puedes usar 100vh si quieres que cubra toda la pantalla */
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            background-color: #b3d9ff; /* Color de fondo detrás de la imagen */
+        }
+        .address {
+            position: absolute;
+            bottom: 50px;  /* Ajusta la distancia desde abajo para pantallas más pequeñas */
+            right: 50px;   /* Ajusta la distancia desde la derecha */
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Sacramento', cursive; /* Fuente Pacifico */
+            font-size: 28px; /* Tamaño de fuente */
+            color: #333;
+            text-align: right;
+            max-width: 80%; /* Limita el ancho de la dirección para pantallas pequeñas */
+        }
+        .address a {
+            text-decoration: none;
+            color: #333; 
+            font-weight: bold;
+            font-size: inherit; 
+        }
+
+        /* Media queries para dispositivos móviles */
+        @media (max-width: 768px) {
+            .address {
+                font-size: 22px; /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+                right: 10px; /* Ajusta la posición */
+                bottom: 10px; /* Ajusta la posición */
+                max-width: 90%; /* Aumenta el ancho disponible */
+                text-align: center; /* Centra el texto en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .address {
+                font-size: 18px; /* Aún más pequeño en pantallas de móviles */
+                right: 5px;
+                bottom: 5px;
+                max-width: 100%; /* Usa todo el ancho disponible */
+                text-align: center; /* Centra el texto */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="full-page-image"></div>
+
+    <!-- Dirección colocada en la parte inferior derecha -->
+    <div class="address">
+        <a href="https://www.google.com.mx/maps/place/C.+23+80,+Maravillas,+57410+Cdad.+Nezahualc%C3%B3yotl,+M%C3%A9x./@19.4164515,-99.0493749,17z/data=!3m1!4b1!4m6!3m5!1s0x85d1fc8d7aa07e55:0x7a93907f36110761!8m2!3d19.4164515!4d-99.0467946!16s%2Fg%2F11c43tkvct?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+            Calle 23 Numero 80 Col. Maravillas
+        </a>
+    </div>
+
+</body>
+</html>
+
